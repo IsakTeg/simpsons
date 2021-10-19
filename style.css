@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* För att sätta bakgrundsbilden och få den att täcka hela sidan,
+utan detta var den för liten och upprepades */
+body{
+  background-image: url("img/background1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+
+.navbar{
+  display:flex;
+  //flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  background-color: floralwhite;
+  height: 175px;
+}
+
+.navbarlist{
+  list-style: none;
+
+}
+
+.navbaritems{
+  display: block;
+
+}
+.logo{
+width: 20%;
+height: 55%;
+}
+
+h1{
+  text-align: center;
+  color: rgb(64, 58, 30);
+}
+
+.white1{
+  background-color: floralwhite;
+  width: 100%;
+  height: 100%;
+}
+
+.brodtext1{
+  color: rgb(46, 39, 37);
+  text-align:left;
+  font-size: 18px;
+  margin-bottom: 3px;
+  margin-left: 12px;
+}
+.bild1{
+  width: 90%;
+  height: 90%;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.bild2{
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  margin-top: 4px;
+}
