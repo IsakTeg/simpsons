@@ -167,6 +167,9 @@ h1{
   .brodtext1, .brodtext2, .brodtext3, .brodtext4, .brodtext5{
     font-size: 10px;
   }
+  .brodtext1{
+    margin-right: 3px;
+  }
   .bild1, .bild2, .bild3, .bild4, .bild5{
     width: 90%;
   }
