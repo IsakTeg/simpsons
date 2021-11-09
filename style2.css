@@ -167,8 +167,11 @@ h1{
   .brodtext1, .brodtext2, .brodtext3, .brodtext4, .brodtext5{
     font-size: 15px;
   }
-  .bild1, .bild2, .bild3, .bild4, .bild5{
+  .bild1, .bild3, .bild4, .bild5{
     width: 90%;
+  }
+  .bild2{
+    height: 100%;
   }
   /* för att navbaren ska fungera även när sidan blir mindre */
  .navbarlist{
