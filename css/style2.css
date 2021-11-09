@@ -8,7 +8,7 @@
 /* För att sätta bakgrundsbilden och få den att täcka hela sidan,
 utan detta var den för liten och upprepades */
 body{
-  background-image: url("img/background1.jpeg");
+  background-image: url("../img/background1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;

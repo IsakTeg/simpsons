@@ -7,11 +7,11 @@
 }
 /* För att sätta bakgrundsbilden och få den att täcka hela sidan,
 utan detta var den för liten och upprepades */
+
 body{
-  background-image: url("img/background1.jpeg");
+  background-image: url("../img/background1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: white;
 }
 /* styling av navbaren och det som gör att den fungerar tillsammans med stylingen av navbaritemsarna */
 .navbar{
@@ -173,7 +173,7 @@ align-self: center;
   font-size: 30px !important;
   margin-right: 15px;
 }
-/* close-texten efter man klickat */
+/* close-texten efter man tagit fram menyn */
 .close {
   margin: 20px;
   font-size: 30px !important;
