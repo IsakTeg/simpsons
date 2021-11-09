@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <link rel='stylesheet' type='text/css' href='style2.css'>
+   <link rel='stylesheet' type='text/css' href='grid2.css'>
+   <script src="main.js" charset="utf-8"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+   <title>The Simpsons' Cast</title>
+   <meta content="width=device-width, initial-scale=1" name="viewport" />
+   <meta charset="utf-8">
+ </head>
+ <body>
+   <!-- Grid diven-->
+    <div class="container">
+      <!-- pappret i mitten av sidan-->
+      <div class="white1"> </div>
+      <!-- navbaren och länkningar-->
+       <nav class="navbar" id="top">
+         <ul class="navbarlist">
+           <li class="logo navbaritems" onclick="openMenu()">
+             <img src="img/logo.png" alt="The Simpsons logo" id="logo">
+           </li>
+           <li class="navbaritems navbarlinks" id="reviews">
+              <a href="https://www.imdb.com/title/tt0096697/" target="_blank" class="navbarlinks">
+                 <p>Reviews</p>
+              </a>
+           </li>
+           <li class="navbaritems" id="reasons">
+             <a href="index.html" class="navbarlinks">
+               <p>Reasons</p>
+             </a>
+           </li>
+           <li class="logo2 navbaritems" id="logo2">
+             <a class="navbarlinks" href="https://www.disneyplus.com/sv-se" target="_blank">
+             <img src="img/Disney+logo.png" alt="Disneyplus logo" id="disneyLogo">
+             </a>
+           </li>
+         </ul>
+       </nav>
+       <!-- bilderna och texten-->
+       <h1>The Simpsons' Cast</h1>
+       <img src="img/homer.png" alt="Homer eating a donut" id="Homer" class="bild1">
+       <p class="brodtext1">Dan Castellaneta as: Homer Simpson</p>
+       <img src="img/bart.png" alt="Bart simpson with his hands in his pockets" class="bild2">
+       <p class="brodtext2">Nancy Cartwright as: Bart Simpson</p>
+       <img src="img/marge.png" alt="Marge simpson" class="bild3">
+       <p class="brodtext3">Julie Kavner as: Marge Simpson</p>
+       <img src="img/lisa.png" alt="Lisa Simpson" class="bild4">
+       <p class="brodtext4">Yeardly Smith as: Lisa Simpson</p>
+       <img src="img/maggie.png" alt="Maggie Simpson" class="bild5">
+       <p class="brodtext5">Nancy Cartwright as: Maggie Simpson</p>
+       <div id="menu" class="overlay">
+         <!-- menyn-->
+         <span class="material-icons close" onclick="closeMenu()"> close </span>
+
+         <div class="overlay-content">
+           <a href="index.html">Home</a>
+           <a target="_blank" href="https://www.imdb.com/title/tt0096697/">Reviews</a>
+           <a href="cast.html">Cast</a>
+           <a target="_blank" href="https://www.disneyplus.com/sv-se"
+             >Disney+</a>
+         </div>
+       </div>
+     </div>
+   </body>
+  </html>

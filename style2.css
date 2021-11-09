@@ -13,7 +13,8 @@ body{
   background-size: cover;
   background-color: white;
 }
-/* styling av navbaren och det som gör att den fungerar tillsammans med stylingen av navbaritemsarna */
+
+/*Stylingen av navbaren och dess items*/
 .navbar{
   height: 100px;
   margin-bottom: 2px;
@@ -69,115 +70,62 @@ padding: 5px;
   align-self: center;
   margin-right: 5px;
 }
-
-
-/* för att få pappret i mitten att bli rätt färg och storlek */
+/* pappret*/
 .white1{
   background-color: floralwhite;
   width: 100%;
   height: 100%;
 }
-/* styling av texten, bilderna och footern */
-
+/* stylingen av sidans innehåll*/
 h1{
   text-align: center;
-  color: rgb(64, 58, 30);
+  margin-bottom: 11px;
 }
 
-.brodtext1{
-  color: rgb(46, 39, 37);
-  text-align:left;
-  font-size: 18px;
-  margin-bottom: 3px;
-  margin-left: 12px;
-  align-self: center;
-}
 .bild1{
-  width: 90%;
-  margin-right: 3px;
-  margin-bottom: 3px;
-}
 
-h3{
+}
+.brodtext1{
+  margin-left: 3px;
   text-align: center;
-padding-top: 12px;
 }
 
 .brodtext2{
+  margin-right: 3px;
   text-align: center;
-  margin-right: 15px;
-  margin-top: 3px;
 }
-
 .bild2{
-  width: 100%;
-  margin-left: 20px;
-  margin-top: 4px;
-  margin-bottom: 6px;
-}
-
-.h2rubrik{
-  text-align:center;
-}
-
-.brodtext3{
-  color: rgb(46, 39, 37);
-  text-align:left;
-  font-size: 18px;
-  margin-bottom: 3px;
-  margin-left: 12px;
-  align-self: center;
-  z-index: 3;
+  height:100%;
 }
 
 .bild3{
-  width: 100%;
-  padding: 0px 8px;
-  align-self: center;
-}
-footer{
-  background-color: gray;
-}
-/* interna länken */
-.intern{
-text-align: center;
-text-decoration: none;
-color:black;
-align-self: center;
+  width:90%;
 }
 
-/* Gör sidan responsiv för enheter under 600px, det vill säga främst mobiler*/
-@media only screen and (max-width: 600px) {
-  h1{
-    font-size: 18px;
-  }
-  #reviews, #cast, #logo2 {
-    display: none;
-  }
-  /* använder klasserna eftersom footer-texten också är ett p-element och jag vill inte ändra den på telefonen*/
-  .brodtext1, .brodtext2, .brodtext3{
-    font-size: 15px;
-  }
-  /* för att navbaren ska fungera även när sidan blir mindre */
- .navbarlist{
-   flex-direction: row;
-   overflow: hidden;
-   flex-wrap: nowrap;
- }
+.bild4{
+  width:85%;
 }
 
-/* Koden nedan är till för meny:n som kommer fram när man klickar på simpsons logga */
+
+.bild5{
+
+}
+.brodtext5{
+  text-align: center;
+}
+/* sjävla menyn*/
 .menu {
   visibility: hidden;
   color: white;
   font-size: 30px !important;
   margin-right: 15px;
 }
-/* close-texten efter man klickat */
+/* close-texten*/
 .close {
   margin: 20px;
   font-size: 30px !important;
 }
+
 /* för att den ska ta upp hela sidan, för att den ska ligga över andra element (z-index)och för att det ska ta 0.4 sekunder för den att åka fram */
 .overlay {
   height: 100%;
@@ -188,10 +136,9 @@ align-self: center;
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);
   overflow-x: hidden;
-  transition: 0.4s;
+  transition: 0.5s;
   z-index: 10;
 }
-/* detta är stylingen av innehållet inom overlayn */
 .overlay-content {
   position: relative;
   top: 25%;
@@ -205,5 +152,28 @@ align-self: center;
   font-size: 36px;
   color: #818181;
   display: block;
-  transition: 0.2s;
+  transition: 0.3s;
+}
+/* Media query för att få sidan att se bra ut på mobila enheter */
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 18px;
+  }
+  /* för att man inte ska kunna se dessa element när sidan blir för liten */
+  #reviews, #reasons, #logo2 {
+    display: none;
+  }
+  /* för att texten ska gå att läsa och inte vara för liten*/
+  .brodtext1, .brodtext2, .brodtext3, .brodtext4, .brodtext5{
+    font-size: 15px;
+  }
+  .bild1, .bild2, .bild3, .bild4, .bild5{
+    width: 90%;
+  }
+  /* för att navbaren ska fungera även när sidan blir mindre */
+ .navbarlist{
+   flex-direction: row;
+   overflow: hidden;
+   flex-wrap: nowrap;
+ }
 }

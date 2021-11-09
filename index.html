@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html>
  <head>
+   <!-- Klassiska starterkoden, länkar till style, grid och även Javascript-->
    <link rel='stylesheet' type='text/css' href='style.css'>
    <link rel='stylesheet' type='text/css' href='grid.css'>
+   <script src="main.js" charset="utf-8"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
    <title>Reasons to watch: The Simpsons</title>
-   <meta name= “viewport” content =”width=device-width, initial-scale=1.0”>
+   <meta content="width=device-width, initial-scale=1" name="viewport" />
    <meta charset="utf-8">
  </head>
  <body>
+   <!-- Grid-diven -->
     <div class="container">
+      <!-- Diven som används till att sätta bit bakgrund i mitten av sidan-->
       <div class="white1"> </div>
-       <nav class="navbar">
-         <img src="img/logo.png" alt="The Simpsons logo" class="logo">
+      <!-- koden till navbaren, en unordered list där jag tog bort punkterna i css, här länkar jag även till de andra sidorna med hjälp av anchor element-->
+       <nav class="navbar" id="top">
          <ul class="navbarlist">
-           <li class="navbaritems"> Reviews </li>
+           <li class="logo navbaritems" onclick="openMenu()">
+             <img src="img/logo.png" alt="The Simpsons logo" id="logo">
+           </li>
+           <li class="navbaritems navbarlinks" id="reviews">
+              <a href="https://www.imdb.com/title/tt0096697/" target="_blank" class="navbarlinks">
+                 <p>Reviews</p>
+              </a>
+           </li>
+           <li class="navbaritems" id="cast">
+             <a href="cast.html" class="navbarlinks">
+               <p>Cast</p>
+             </a>
+           </li>
+           <li class="logo2 navbaritems" id="logo2">
+             <a class="navbarlinks" href="https://www.disneyplus.com/sv-se" target="_blank">
+             <img src="img/Disney+logo.png" alt="Disneyplus logo" id="disneyLogo">
+             </a>
+           </li>
          </ul>
        </nav>
+       <!-- koden som gör att man kan klicka på simsponsloggan för att få fram meny:n och innehållet i den -->
+      <div id="menu" class="overlay">
+        <span class="material-icons close" onclick="closeMenu()"> close </span>
+
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a target="_blank" href="https://www.imdb.com/title/tt0096697/">Reviews</a>
+          <a href="cast.html">Cast</a>
+          <a target="_blank" href="https://www.disneyplus.com/sv-se">Disney+
+          </a>
+        </div>
+      </div>
+       <!-- texten nedan är till för texten inom sidan och bilderna -->
        <h1>Reasons to watch: The Simpsons</h1>
-       <p class='brodtext1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <p class='brodtext1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
        <img src="img/homerclown.jpeg" alt="Homer as a clown" class="bild1">
-       <p></p>
+       <h3 class="header3">Lorem</h3>
+       <p class="brodtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
        <img src="img/homer2.jpeg" alt="Image of homer whilst fat saying that he'll wear a muumuu" class="bild2">
+       <h2 class="h2rubrik">Lorem</h2>
+       <p class="brodtext3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <img src="img/simpsonfunny.jpeg" alt="Homer talking about getting drunk" class="bild3">
+       <!-- Interna länken tillsammans med footer-->
+       <footer></footer>
+        <a href="#top" class="intern">
+           <p>To the top</p>
+        </a>
     </div>
   </body>
  </html>
